@@ -1,0 +1,130 @@
+body {
+  position: relative;
+  height: 100%;
+
+  h3, h4, h5, h6 {
+    font-weight: 600;
+  }
+
+  .btn.btn-primary {
+    border: none;
+
+    &.btn-lg {
+      border-radius: 0px;
+      -webkit-border-radius: 0px;
+      -moz-border-radius: 0px;
+    }
+  }
+
+  .logo-text {
+    font-family: 'Courier New', serif !important;
+    font-weight: 200;
+  }
+
+  section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .navbar {
+    &.navbar-fixed-top {
+      background-color: rgba(255, 255, 255, .90);
+      border-bottom: none;
+    }
+
+    .navbar-nav {
+      font-weight: 200;
+    }
+  }
+
+  .carousel {
+    img{
+      width: 100%;
+      position: relative;
+    }
+
+    .carousel-inner {
+      .item {
+        width: 100%;
+        position: relative;
+//        top: -100px;
+        max-height: 550px;
+
+//        @media (max-width: $screen-sm-max) {
+//
+//          max-height: 400px;
+//        }
+      }
+      .carousel-inner-static-overlay {
+        position: absolute;
+        z-index: 1000;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+
+        .carousel-inner-static-caption {
+          position: absolute;
+          right: 10%;
+          width: 35%;
+          top: 5%;
+
+          h1 {
+            color: white;
+          }
+
+          @media (max-width: $screen-sm-max) {
+            h1 {
+              font-size: 34px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #content {
+    #services {
+      margin-top: 20px;
+
+      i {
+        display: inline-block;
+        padding: 20px 44px;
+        border-radius: 50%;
+        background-color: $brand-primary;
+
+        &:before {
+          font-size: 7em;
+          margin-left: 0px;
+          color: $gray-lighter;
+        }
+      }
+    }
+
+    input, textarea {
+      font-weight: 200;
+    }
+
+    hr.section-divider {
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+  }
+
+  .footer {
+    background-color: black;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: white;
+    font-weight: 200;
+
+    .disclaimer {
+      font-size: 12px;
+
+      a {
+        color: white;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+

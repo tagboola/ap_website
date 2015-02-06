@@ -1,0 +1,114 @@
+#content
+  .carousel.slide.fade-animation
+    .carousel-inner
+      .carousel-inner-static-overlay.hidden-xs
+        .carousel-inner-static-caption
+          h1.text-right.text-lowercase
+            | affordable digital solutions for your business.
+          p.text-right
+            a.btn.btn-primary.btn-lg href="#contactUs"
+              | Contact Us
+      .item.active
+        = image_tag("laptop.jpg", :alt => "#{@page_title}", :class => "big-image")
+
+
+  .container
+    .visible-xs
+      .row
+        .col-md-12
+          h1.text-center.text-lowercase
+            | affordable digital solutions for your business.
+          p.text-center
+            a.btn.btn-primary href="#contactUs"
+              | Contact Us
+      hr
+
+
+    section#whatWeDo
+      .row
+        .col-md-8.col-md-offset-2
+          h1.text-center.text-lowercase
+            | what we do.
+          p.text-center.lead
+            ' lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vestibulum sodales enim,
+            | vitae elementum nisi. Curabitur volutpat fringilla quam, et luctus odio mattis sed.
+
+      #services.row
+        .col-md-4.text-center
+          i.flaticon-4
+          h4 Web Development
+          p
+            ' lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vestibulum sodales enim,
+            | vitae elementum nisi. Curabitur volutpat fringilla quam, et luctus odio mattis sed.
+        .col-md-4.text-center
+          i.flaticon-magnifier58
+          h4 SEO
+          p
+            ' lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vestibulum sodales enim,
+            | vitae elementum nisi. Curabitur volutpat fringilla quam, et luctus odio mattis sed.
+        .col-md-4.text-center
+          i.flaticon-chart5
+          h4 Internet Marketing
+          p
+            ' lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vestibulum sodales enim,
+            | vitae elementum nisi. Curabitur volutpat fringilla quam, et luctus odio mattis sed.
+
+    hr
+
+    section#ourWork
+      .row
+        .col-md-8.col-md-offset-2
+          h1.text-center.text-lowercase
+            | our work.
+          p.text-center.lead
+            ' lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vestibulum sodales enim,
+            | vitae elementum nisi. Curabitur volutpat fringilla quam, et luctus odio mattis sed.
+
+      .row
+        .col-xs-6.col-md-4
+          = image_tag("example_thumbnail.png", class: 'thumbnail img-responsive')
+        .col-xs-6.col-md-4
+          = image_tag("example_thumbnail.png", class: 'thumbnail img-responsive')
+        .col-xs-6.col-md-4
+          = image_tag("example_thumbnail.png", class: 'thumbnail img-responsive')
+
+        .col-xs-6.col-md-4
+          = image_tag("example_thumbnail.png", class: 'thumbnail img-responsive')
+        .col-xs-6.col-md-4
+          = image_tag("example_thumbnail.png", class: 'thumbnail img-responsive')
+        .col-xs-6.col-md-4
+          = image_tag("example_thumbnail.png", class: 'thumbnail img-responsive')
+
+        .col-xs-6.col-md-4
+          = image_tag("example_thumbnail.png", class: 'thumbnail img-responsive')
+
+    hr
+
+    section#contactUs
+      .row
+        .col-md-8.col-md-offset-2
+          h1.text-center.text-lowercase
+            | contact us.
+          p.text-center.lead
+            ' lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vestibulum sodales enim,
+            | vitae elementum nisi. Curabitur volutpat fringilla quam, et luctus odio mattis sed.
+
+      .row
+        .col-md-offset-3.col-md-6
+          form
+            .form-group
+              = label_tag(:first_name, 'First Name', class: 'sr-only')
+              = text_field_tag(:first_name, nil, class: 'form-control', placeholder: 'First Name')
+            .form-group
+              = label_tag(:last_name, 'Last Name', class: 'sr-only')
+              = text_field_tag(:last_name, nil, class: 'form-control', placeholder: 'Last Name')
+            .form-group
+              = label_tag(:email, 'Email', class: 'sr-only')
+              = text_field_tag(:email, nil, class: 'form-control', placeholder: 'Email')
+            .form-group
+              = label_tag(:message, 'Message', class: 'sr-only')
+              = text_area_tag(:message, nil, class: 'form-control', placeholder: 'Type your message here')
+            .form-group.text-center
+              = submit_tag('Submit', class:'btn btn-primary btn-lg')
+
+
