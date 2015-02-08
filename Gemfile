@@ -55,6 +55,8 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'newrelic_rpm'
+
 group :development do
   gem 'pry-rails'
   gem 'pry-doc'
