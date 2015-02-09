@@ -114,7 +114,7 @@
               = f.text_field(:email, class: 'form-control', placeholder: 'Email', type: 'email')
             .form-group
               = f.label(:message, 'Message', class: 'sr-only')
-              = f.text_field(:message, class: 'form-control', placeholder: 'Type your message here')
+              = f.text_area(:message, class: 'form-control', placeholder: 'Type your message here', rows: "3")
             .form-group.text-center
               = f.submit('Submit', class:'btn btn-primary btn-lg')
 

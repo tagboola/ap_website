@@ -1,3 +1,19 @@
 // Place all the styles related to the inquiries controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.form-box-container {
+  background-color: $gray-lighter;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .form-box {
+    width: 460px;
+    margin: 0px auto;
+    background-color: white;
+    padding: 20px;
+    font-weight: 200;
+    font-size: 24px;
+  }
+}
+
