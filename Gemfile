@@ -57,6 +57,8 @@ end
 
 gem 'newrelic_rpm'
 
+gem 'email_validator'
+
 group :development do
   gem 'pry-rails'
   gem 'pry-doc'
