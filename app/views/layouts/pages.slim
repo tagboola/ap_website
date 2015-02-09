@@ -16,6 +16,20 @@ html
           a.navbar-brand href=root_path
             span.logo-text
               | ap web consulting
+        .navbar-right.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li
+              a href="#home"
+                | home
+            li
+              a href="#whatWeDo"
+                | what we do
+            li
+              a href="#ourWork"
+                | our work
+            li
+              a href="#contactUs"
+                | contact us
 
     = yield
 
@@ -26,9 +40,9 @@ html
             p.text-center
               | 413-285-2039
           .col-sm-4
-           p.text-center
-            a.text-center href="mailto:apwebconsulting@gmail.com"
-              | apwebconsulting@gmail.com
+            p.text-center
+              a.text-center href="mailto:apwebconsulting@gmail.com"
+                | apwebconsulting@gmail.com
           .col-sm-4
             p.text-center.logo-text
               | ap web consulting

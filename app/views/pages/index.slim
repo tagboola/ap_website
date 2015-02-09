@@ -92,23 +92,36 @@
           p.text-center.lead
             ' lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vestibulum sodales enim,
             | vitae elementum nisi. Curabitur volutpat fringilla quam, et luctus odio mattis sed.
-
+          - if @inquiry_errors
+            .alert.alert-danger
+              p
+                | Please fix the errors below and resubmit.
+                ul
+                  - @inquiry_errors.each do |error_message|
+                    li
+                      | #{error_message}
       .row
         .col-md-offset-3.col-md-6
-          form
+          = form_for(@inquiry) do |f|
             .form-group
-              = label_tag(:first_name, 'First Name', class: 'sr-only')
-              = text_field_tag(:first_name, nil, class: 'form-control', placeholder: 'First Name')
+              = f.label(:first_name, class: 'sr-only')
+              = f.text_field(:first_name, class: 'form-control', placeholder: 'First Name')
             .form-group
-              = label_tag(:last_name, 'Last Name', class: 'sr-only')
-              = text_field_tag(:last_name, nil, class: 'form-control', placeholder: 'Last Name')
+              = f.label(:last_name, class: 'sr-only')
+              = f.text_field(:last_name, class: 'form-control', placeholder: 'Last Name')
             .form-group
-              = label_tag(:email, 'Email', class: 'sr-only')
-              = text_field_tag(:email, nil, class: 'form-control', placeholder: 'Email')
+              = f.label(:email, class: 'sr-only')
+              = f.text_field(:email, class: 'form-control', placeholder: 'Email', type: 'email')
             .form-group
-              = label_tag(:message, 'Message', class: 'sr-only')
-              = text_area_tag(:message, nil, class: 'form-control', placeholder: 'Type your message here')
+              = f.label(:message, 'Message', class: 'sr-only')
+              = f.text_field(:message, class: 'form-control', placeholder: 'Type your message here')
             .form-group.text-center
-              = submit_tag('Submit', class:'btn btn-primary btn-lg')
+              = f.submit('Submit', class:'btn btn-primary btn-lg')
+
+javascript:
+  var inquiryErrors = #{{ @inquiry_errors }};
+  if ($.isArray(inquiryErrors) && inquiryErrors.length > 0) {
+    location.hash = "#contactUs";
+  }
 
 
