@@ -20,9 +20,8 @@ body {
     }
   }
 
-  .logo-text {
-    font-family: 'Courier New', serif !important;
-    font-weight: 200;
+  .logo {
+    height: 50px;
   }
 
   section {
@@ -41,6 +40,10 @@ body {
     }
   }
 
+  #ourWork .thumbnail {
+    max-height: 400px;
+  }
+
   .carousel {
     img{
       width: 100%;
@@ -51,13 +54,7 @@ body {
       .item {
         width: 100%;
         position: relative;
-//        top: -100px;
         max-height: 550px;
-
-//        @media (max-width: $screen-sm-max) {
-//
-//          max-height: 400px;
-//        }
       }
       .carousel-inner-static-overlay {
         position: absolute;

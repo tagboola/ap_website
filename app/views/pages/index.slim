@@ -9,7 +9,7 @@
             a.btn.btn-primary.btn-lg href="#contactUs"
               | Contact Us
       .item.active
-        = image_tag("laptop.jpg", :alt => "#{@page_title}", :class => "big-image")
+        = image_tag("coding.png", :alt => "#{@page_title}")
 
 
   .container
@@ -30,28 +30,32 @@
           h1.text-center.text-lowercase
             | what we do.
           p.text-center.lead
-            ' lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vestibulum sodales enim,
-            | vitae elementum nisi. Curabitur volutpat fringilla quam, et luctus odio mattis sed.
+            ' We provide world class digital services to help boost your business. Our services help you gain
+            | new customers and retain existing ones at an affordable price, ultimately putting money back in your pocket.
 
       #services.row
         .col-md-4.text-center
           i.flaticon-4
           h4 Web Development
           p
-            ' lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vestibulum sodales enim,
-            | vitae elementum nisi. Curabitur volutpat fringilla quam, et luctus odio mattis sed.
+            ' We create rich and engaging mobile optimized web applications for your business. Our team specializes in
+            ' several different web and mobile technologies that will take your businesses' digital presence to the
+            | next level.
         .col-md-4.text-center
           i.flaticon-magnifier58
           h4 SEO
           p
-            ' lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vestibulum sodales enim,
-            | vitae elementum nisi. Curabitur volutpat fringilla quam, et luctus odio mattis sed.
+            ' Organic online search is a critical part to attracting new business to your website.
+            ' Our SEO audit will compile an in-depth analysis of your site’s page optimization and
+            | immediately locate areas that can be improved.
         .col-md-4.text-center
           i.flaticon-chart5
           h4 Internet Marketing
           p
-            ' lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vestibulum sodales enim,
-            | vitae elementum nisi. Curabitur volutpat fringilla quam, et luctus odio mattis sed.
+            ' The importance of social media and internet marketing in every day communication has created
+            ' new opportunities for businesses to connect with their future and existing customers. From Facebook,
+            ' Twitter, LinkedIn, Youtube, Vimeo, and more, we take advantage of these popular networks to showcase
+            | the products, services, and unique brand identity of your business.
 
     hr
 
@@ -60,27 +64,15 @@
         .col-md-8.col-md-offset-2
           h1.text-center.text-lowercase
             | our work.
-          p.text-center.lead
-            ' lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vestibulum sodales enim,
-            | vitae elementum nisi. Curabitur volutpat fringilla quam, et luctus odio mattis sed.
 
       .row
-        .col-xs-6.col-md-4
-          = image_tag("example_thumbnail.png", class: 'thumbnail img-responsive')
-        .col-xs-6.col-md-4
-          = image_tag("example_thumbnail.png", class: 'thumbnail img-responsive')
-        .col-xs-6.col-md-4
-          = image_tag("example_thumbnail.png", class: 'thumbnail img-responsive')
+        .col-xs-12.col-md-6
+          = image_tag("attorney.png", class: 'thumbnail img-responsive')
+        .col-xs-12.col-md-6
+          = image_tag("gearbottle.png", class: 'thumbnail img-responsive')
+        .col-xs-12.col-md-6
+          = image_tag("cms.png", class: 'thumbnail img-responsive')
 
-        .col-xs-6.col-md-4
-          = image_tag("example_thumbnail.png", class: 'thumbnail img-responsive')
-        .col-xs-6.col-md-4
-          = image_tag("example_thumbnail.png", class: 'thumbnail img-responsive')
-        .col-xs-6.col-md-4
-          = image_tag("example_thumbnail.png", class: 'thumbnail img-responsive')
-
-        .col-xs-6.col-md-4
-          = image_tag("example_thumbnail.png", class: 'thumbnail img-responsive')
 
     hr
 
@@ -89,9 +81,6 @@
         .col-md-8.col-md-offset-2
           h1.text-center.text-lowercase
             | contact us.
-          p.text-center.lead
-            ' lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vestibulum sodales enim,
-            | vitae elementum nisi. Curabitur volutpat fringilla quam, et luctus odio mattis sed.
           - if @inquiry_errors
             .alert.alert-danger
               p
