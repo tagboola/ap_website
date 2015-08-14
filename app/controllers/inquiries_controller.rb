@@ -1,4 +1,5 @@
 class InquiriesController < ApplicationController
+  layout 'pages'
 
   # GET /inquiries/1
   def show
