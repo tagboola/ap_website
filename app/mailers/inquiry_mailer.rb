@@ -3,6 +3,6 @@ class InquiryMailer < ActionMailer::Base
 
   def inquiry_created(inquiry)
     @inquiry = inquiry
-    mail(to: 'apwebconsulting@gmail.com', subject: 'New inquiry received')
+    mail(to: 'inquiries@apwebconsulting.com', subject: 'New inquiry received')
   end
 end
