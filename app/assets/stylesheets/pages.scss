@@ -41,6 +41,7 @@ body {
   }
 
   #ourWork .thumbnail {
+    @include center-block;
     max-height: 400px;
   }
 
